@@ -1,6 +1,7 @@
 package com.app.bolt.security.domain;
 
 import jakarta.persistence.*;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Entity
 public class Member {
@@ -25,8 +26,9 @@ public class Member {
 
     protected Member() {}
 
-    public static Member createUser(String userId, String pw) {
-        return new Member(null, userId, pw, "USER");
+    public static Member createUser(String userId, String pw, PasswordEncoder passwordEncoder) {
+
+        return new Member(null, userId, passwordEncoder.encode(pw), "USER");
     }
 
     public Long getId() {
