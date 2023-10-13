@@ -17,7 +17,7 @@
         <p class="text-center">
             <img src="/images/nahwasa-profile.png" class="img-thumbnail" style="width: 200px;" alt="이 글이 보인다면 시큐리티 설정 잘못한거임!">
         </p>
-        <h2 class="form-signin-heading text-center mb-5">nahwasa.com</h2>
+        <h2 class="form-signin-heading text-center mb-5">test</h2>
 
         <p>
             <label for="username" class="sr-only">아이디</label>
@@ -34,13 +34,6 @@
         <button class="btn btn-lg btn-warning btn-block" type="submit">회원가입하기</button>
     </form>
 
-    <script>
-        const loginBtn = document.getElementById('login_btn');
-
-        loginBtn.addEventListener('click', () => {
-            sessionStorage.setItem('userid', document.getElementById('username').value);
-        });
-    </script>
 </div>
 </body>
 </html>

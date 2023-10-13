@@ -13,6 +13,7 @@ public class Member {
 
     private String pw;
 
+    //추후에 여러 권한일 시에는 배열로
     private String roles;
 
     private Member(Long id, String userid, String pw, String roleUser) {
